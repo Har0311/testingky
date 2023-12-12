@@ -1,0 +1,156 @@
+@import url("https://fonts.googleapis.com/css2?family=Lato:wght@100;300;400;700&family=Roboto:wght@300;400;500&display=swap");
+
+.container {
+  padding-top: 5%;
+  font-family: "Roboto", sans-serif;
+  background: #0b090a;
+}
+
+.stripContainer {
+  border-top: 2px solid white;
+  border-bottom: 2px solid white;
+  width: 100%;
+  overflow: hidden;
+  white-space: nowrap;
+  font-family: "Roboto", sans-serif;
+}
+
+.stripper1 {
+  margin-left: 2.5rem;
+}
+.stripper2 {
+  margin-left: 2.5rem;
+}
+
+.textone {
+  color: #d90429;
+}
+
+.textsec {
+  color: white;
+}
+
+.stripText {
+  display: flex;
+  font-size: 2rem;
+  font-weight: 600;
+  transform: translateX(5%);
+  animation: my-animation 20s linear infinite;
+  font-family: "Roboto", sans-serif;
+}
+
+.stripText:hover {
+  animation-play-state: paused;
+}
+
+@keyframes my-animation {
+  from {
+    transform: translateX(5%);
+  }
+  to {
+    transform: translateX(-100%);
+  }
+}
+
+.content {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  padding: 5%;
+  align-items: center;
+  justify-content: center;
+}
+
+.content .headingText {
+  width: 100%;
+  font-size: 4rem;
+  display: block;
+  text-align: center;
+}
+
+.content .headingText h1 {
+  color: #d90429;
+  font-weight: 600;
+}
+
+.content .paraT {
+  margin-top: 2%;
+  width: 50%;
+  display: block;
+  text-align: center;
+}
+
+.content .paraT p {
+  color: white;
+  font-size: 1.5rem;
+  line-height: 2rem;
+}
+
+.content .contacts {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.content .contacts .cont {
+  margin-top: 10%;
+  margin-left: 5%;
+  width: 30%;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+}
+
+.content .contacts .cont .contactPhone {
+  margin-top: 2%;
+}
+
+.content .contacts .cont h3 {
+  color: white;
+  font-size: large;
+}
+
+@media (max-width: 800px) {
+  .container {
+    padding-top: 10%;
+  }
+  .content {
+    flex-direction: column;
+  }
+
+  .content .headingText {
+    margin-top: 10%;
+    width: 100%;
+    font-size: 2rem;
+  }
+
+  .content .headingText h1 {
+    font-weight: 500;
+  }
+
+  .content .paraT {
+    margin-top: 2%;
+    width: 90%;
+    display: block;
+    text-align: justify;
+  }
+
+  .content .paraT p {
+    padding: 2%;
+    color: white;
+    font-size: 1.2rem;
+    line-height: 1.5rem;
+  }
+
+  .content .contacts {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .content .contacts .cont {
+    margin-top: 10%;
+    margin-left: 0;
+    width: 100%;
+  }
+}

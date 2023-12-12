@@ -1,0 +1,297 @@
+@import url("https://fonts.googleapis.com/css2?family=Lato:wght@100;300;400;700&family=Roboto:wght@300;400;500&display=swap");
+
+#root {
+  padding: 0;
+  height: 100%;
+}
+* {
+  margin: 0;
+  padding: 0;
+}
+html,
+body {
+  margin: 0;
+  padding: 0;
+  font-family: "Roboto";
+}
+body {
+  background-image: url("../../assets/Frame13.png");
+  background-size: cover;
+  background-repeat: repeat;
+  background-attachment: fixed;
+  background-position: center;
+}
+.frame {
+  margin-right: 0 auto;
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  font-family: "Roboto";
+  padding-top: 5%;
+}
+.headingText {
+  display: block;
+  text-align: center;
+  width: 100%;
+  color: #fff;
+  margin-top: 3%;
+  font-size: 2rem;
+  font-family: "Roboto";
+  font-weight: 700;
+}
+
+.headingText h1 {
+  margin-left: 0;
+  color: #fff;
+}
+
+.loginForm {
+  background-color: white;
+  height: 60%;
+  border-radius: 40px;
+  display: flex;
+  flex-direction: column;
+  width: 40%;
+  align-self: center;
+  align-items: center;
+  text-align: center;
+  margin-top: 2%;
+  margin-left: 0%;
+  color: #0b090a;
+  margin-bottom: 2%;
+}
+
+.headerText {
+  width: 100%;
+  font-family: "Roboto";
+}
+
+h1 {
+  color: #0b090a;
+  font-family: "Roboto";
+}
+.loginForm h1 {
+  font-size: x-large;
+  margin-top: 20px;
+}
+
+.loginForm form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 90%;
+  height: 25rem;
+  font-family: "Roboto";
+}
+
+.loginForm form .eAdd {
+  display: block;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 10%;
+  margin-top: 5px;
+  margin-right: 5%;
+}
+
+.loginForm form .pass {
+  display: block;
+  margin-top: 30px;
+  height: 10%;
+  width: 100%;
+  margin-right: 5%;
+}
+
+.loginForm label {
+  float: left;
+  margin-left: 4%;
+  font-size: large;
+  font-weight: 500;
+  font-family: "Roboto";
+}
+
+.loginForm .anchor {
+  display: block;
+  width: 100%;
+  margin-top: 30px;
+}
+
+.loginForm .anchor a {
+  float: right;
+  text-decoration: none;
+  color: #0b090a;
+  font-size: medium;
+  font-family: "Roboto";
+}
+
+.loginForm form input {
+  display: block;
+  padding: 0.5rem 0.1rem;
+  padding-left: 3%;
+  margin-left: 3%;
+  width: 100%;
+  color: #0b090a;
+  font-size: large;
+  font-family: "Roboto";
+}
+
+.loginForm form .btn {
+  display: block;
+  width: 100%;
+  margin-top: 40px;
+  align-items: center;
+  justify-content: center;
+}
+
+.loginForm form .btn button {
+  height: 100%;
+  width: 100%;
+  padding: 0.5rem 0.1rem;
+  border-radius: 40px;
+  color: #ffff;
+  font-size: larger;
+  font-weight: bold;
+  cursor: pointer;
+  border: 2px solid #d90429;
+  font-family: "Roboto";
+}
+
+.loginForm form .another {
+  display: block;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  width: 100%;
+  margin-top: 0px;
+}
+
+.loginForm form .another h4 {
+  font-size: large;
+  color: #0b090a;
+  font-family: "Roboto";
+}
+
+.loginForm form .anBtn {
+  display: block;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  margin-top: 0px;
+}
+
+.loginForm form .anBtn button {
+  height: 100%;
+  padding: 0.5rem 0.1rem;
+  width: 100%;
+  font-size: larger;
+  font-weight: bold;
+  color: #fff;
+  border: 1px solid white;
+  border-radius: 50px;
+  cursor: pointer;
+  font-family: "Roboto";
+}
+
+.loginForm form .otherOpt {
+  display: block;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  text-align: center;
+  font-family: "Roboto";
+}
+
+.loginForm form .otherOpt a {
+  text-decoration: none;
+  color: #d90429;
+  font-family: "Roboto";
+}
+
+@media only screen and (max-width: 640px) {
+  .frame {
+    padding-top: 5%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  .headingText {
+    font-size: 1.5rem;
+    text-align: center;
+    margin-top: 25%;
+  }
+  .headingText h1 {
+    margin-left: 0%;
+  }
+
+  .loginForm {
+    width: 90%;
+    margin-left: 0%;
+    margin-top: 0%;
+    height: 70%;
+    margin-bottom: 10%;
+    border-radius: 40px;
+  }
+
+  .loginForm form {
+    height: 25rem;
+  }
+
+  .loginForm .headerText h1 {
+    font-size: 1rem;
+    margin-top: 2%;
+  }
+
+  .loginForm .anchor {
+    margin-top: 40px;
+  }
+
+  .loginForm form .eAdd {
+    margin-top: 10px;
+    margin-right: 5%;
+  }
+
+  .loginForm form .pass {
+    display: block;
+    margin-top: 30px;
+    height: 10%;
+    width: 100%;
+    margin-right: 5%;
+  }
+
+  .loginForm .anchor a {
+    text-decoration: none;
+    margin-right: 0%;
+  }
+
+  .loginForm form .btn {
+    margin-top: 15px;
+  }
+
+  .loginForm form .another {
+    margin-top: 0;
+  }
+
+  .loginForm form .anBtn {
+    margin-top: 5px;
+  }
+
+  .loginForm form .otherOpt {
+    margin-top: 5px;
+    margin-bottom: 10px;
+  }
+}
+
+@media only screen and (min-width: 641px) and (max-width: 1000px) {
+  .loginForm {
+    width: 70%;
+  }
+
+  .headingText {
+    margin-top: 10%;
+  }
+}

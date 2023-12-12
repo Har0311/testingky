@@ -1,0 +1,113 @@
+@import url("https://fonts.googleapis.com/css2?family=Lato:wght@100;300;400;700&family=Roboto:wght@300;400;500&display=swap");
+
+body {
+  overflow-x: hidden;
+}
+
+.kashiyatra{
+  /* top: 0; */
+  height: 300px;
+  width: 700px;
+  position: absolute;
+  top: 40%;
+  /* background-image: url('./kashiyatra.svg');
+  background-size: cover; */
+  backdrop-filter: blur(2px);
+  /* transition: all 5s ease 1s; */
+  /* margin: auto; */
+  /* z-index: 20; */
+}
+
+.caContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  max-width: 100%;
+  background: #0b090a;
+  height: 30rem;
+  font-family: "Roboto", sans-serif;
+}
+
+.caContainer .headingText {
+  width: 100%;
+  display: block;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+.caContainer .headingText h1 {
+  padding-top: 8%;
+  font-size: 10rem;
+  font-weight: 700;
+  color: #d90429;
+}
+
+.caContainer .caLines {
+  width: 50%;
+  display: block;
+  text-align: center;
+}
+
+.caContainer .caLines p {
+  padding-top: 5%;
+  color: white;
+  font-size: 1.5rem;
+  line-height: 2rem;
+}
+
+.caContainer .applyBtn {
+  display: block;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  padding-top: 2%;
+  padding-bottom: 5%;
+}
+
+.caContainer .applyBtn button {
+  border: 2px solid white;
+  padding: 0.5rem;
+  width: 200px;
+  text-align: center;
+  border-radius: 30px;
+  color: white;
+  font-size: 1rem;
+  line-height: 1.5rem;
+}
+
+.caContainer .applyBtn button:hover {
+  border: 2px solid #d90429;
+  background: #d90429;
+}
+
+@media (max-width: 640px) {
+  .caContainer {
+    height: 40rem;
+  }
+
+  .caContainer .headingText {
+    width: 90%;
+  }
+
+  .caContainer .headingText h1 {
+    padding-top: 8%;
+    font-size: 2.5rem;
+    font-weight: 700;
+    color: #d90429;
+  }
+
+  .caContainer .caLines {
+    width: 90%;
+  }
+
+  .caContainer .caLines p {
+    padding-top: 8%;
+  }
+
+  .caContainer .applyBtn {
+    padding-top: 8%;
+  }
+}

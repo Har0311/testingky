@@ -1,0 +1,210 @@
+body {
+  overflow-x: hidden;
+  background-size: 100%;
+}
+
+.container {
+  background-image: url("../../assets/EventPagesAssets/pageBord.png");
+  background-repeat: no-repeat;
+  background-color: #0e220e;
+  background-size: 100% 100%;
+  /* background-size: cover;  */
+  background-position: top center;
+  background-attachment: fixed;
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  position: relative;
+}
+
+.cardsBox {
+  margin: auto;
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
+  align-items: center;
+  justify-content: center;
+}
+
+.card {
+  background-image: url(../../assets/EventPagesAssets/cardframe.png);
+  background: filled;
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  height: 210px;
+  width: 460px;
+  margin: 2%;
+  display: flex;
+  border-radius: 10px;
+  position: relative;
+}
+
+.card .over {
+  display: flex;
+  width: 30%;
+}
+
+.over .overImgg {
+  height: 210px;
+  width: auto;
+  border-radius: 10px;
+}
+
+.content {
+  display: flex;
+  flex-direction: column;
+  width: 45%;
+  height: 210px;
+}
+
+.Nam {
+  display: flex;
+  width: 100%;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  padding: 1%;
+}
+.Nam h1 {
+  font-size: 25px;
+  font-weight: bolder;
+  text-decoration: underline;
+}
+
+.about {
+  display: flex;
+  width: 100%;
+  text-align: justify;
+}
+
+.about p {
+  font-size: small;
+  padding: 2%;
+  line-height: 1.5;
+  text-align: justify;
+  width: 100ch;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  max-height: 100px;
+  /* white-space: nowrap; */
+}
+
+.last {
+  display: flex;
+  width: 100%;
+  align-items: center;
+  padding: 2%;
+  justify-content: center;
+}
+
+.last button {
+  background-color: #fff;
+  border-radius: 5px;
+  padding: 5%;
+  height: 40px;
+  width: 110px;
+  text-align: center;
+  color: black;
+  font-size: 16px;
+  font-weight: 600;
+}
+
+.lastOver {
+  width: 25%;
+  float: right;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  background-image: url(../../assets/EventPagesAssets/lastCardElement.png);
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  background-position: 10px 0px;
+  height: 210px;
+  border-top-right-radius: 10px;
+  border-bottom-right-radius: 10px;
+}
+
+.overlayText {
+  display: flex;
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+  font-size: 25px;
+  line-height: 0.9;
+  font-weight: 600;
+  width: 100%;
+  height: 210px;
+}
+
+.overlayText h1 {
+  color: black;
+  transform: rotate(-90deg);
+}
+
+@media (max-width: 800px) {
+  .cardsBox {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: space-around;
+  }
+  .card {
+    width: 360px;
+    height: 180px;
+    margin-top: 10%;
+  }
+
+  .lastOver {
+    height: 180px;
+  }
+
+  .over .overImgg {
+    height: 180px;
+    width: auto;
+  }
+
+  .last button {
+    background-color: #fff;
+    border-radius: 5px;
+    padding: 3%;
+    font-size: medium;
+    height: 30px;
+    text-align: center;
+  }
+
+  .about p {
+    line-height: 1;
+  }
+
+  .content {
+    height: 180px;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .about p {
+    font-size: small;
+    padding: 2%;
+    line-height: 1.5;
+    text-align: justify;
+    width: 100ch;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    max-height: 85px;
+    /* white-space: nowrap; */
+  }
+
+  .Nam {
+    text-align: center;
+    padding: 0;
+    white-space: nowrap;
+  }
+
+  .Nam h1 {
+    font-size: 20px;
+    font-weight: bold;
+    text-decoration: underline;
+  }
+}

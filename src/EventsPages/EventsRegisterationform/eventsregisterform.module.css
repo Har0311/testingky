@@ -1,0 +1,135 @@
+.main {
+  height: 100vh;
+  display: flex;
+  margin: auto;
+  margin-top: 2%;
+  margin-bottom: 2%;
+  align-items: center;
+  justify-content: center;
+}
+
+.mainCont {
+  margin-top: 5%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  background-image: url(../../assets/EventPagesAssets/outerframeofregistercard.png);
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  height: 45rem;
+  width: 400px;
+  margin: auto;
+}
+
+.divOne {
+  margin-bottom: 5%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+.divOne .boxx {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 5%;
+}
+
+.divOne .boxx label {
+  font-size: 22px;
+  text-align: justify;
+  color: black;
+}
+
+.divOne .boxx input {
+  display: block;
+  box-sizing: border-box;
+  text-align: justify;
+  height: 41px;
+  width: 282px;
+  background: #fff;
+  border-radius: 10px;
+  color: #3d2113;
+  padding-left: 2%;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.divThree {
+  width: 80%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 3%;
+}
+
+hr {
+  border: 10px dotted #3d2113;
+  width: 310px;
+}
+
+.boxx label h3 {
+  font-size: 18px;
+}
+
+.dottedLine {
+  display: flex;
+  width: 100%;
+  align-items: center;
+  text-align: center;
+  justify-content: center;
+  margin-top: 4%;
+}
+
+.divThree button {
+  border-radius: 10px;
+  padding: 2%;
+  font-size: 25px;
+  background: red;
+  height: 50px;
+  width: 175px;
+  color: #fff;
+  text-align: center;
+  box-shadow: rgba(0, 0, 0, 0.1);
+}
+
+.divFour {
+  width: 80%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 5%;
+}
+
+.divFour button {
+  padding: 2%;
+  border-radius: 10px;
+  font-size: 25px;
+  background: red;
+  height: 50px;
+  text-align: center;
+  width: 175px;
+  color: #fff;
+  box-shadow: rgba(0, 0, 0, 0.1);
+}
+
+@media (max-width: 410px) {
+  .divOne {
+    margin-top: 0%;
+  }
+  .mainCont {
+    margin: 5%;
+  }
+
+  .dottedLine {
+    margin-top: 0%;
+  }
+  .divTwo {
+    width: 80%;
+  }
+  .divThree button {
+    margin-bottom: 5%;
+  }
+}

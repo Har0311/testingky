@@ -1,0 +1,136 @@
+@import url("https://fonts.googleapis.com/css2?family=Lato:wght@100;300;400;700&family=Roboto:wght@300;400;500&display=swap");
+
+.container {
+  font-family: "Roboto", sans-serif;
+  background: #0b090a;
+}
+
+.stripContainer {
+  border-top: 2px solid white;
+  border-bottom: 2px solid white;
+  width: 100%;
+  overflow: hidden;
+  white-space: nowrap;
+  font-family: "Roboto", sans-serif;
+}
+
+.stripper1 {
+  margin-left: 2.5rem;
+}
+.stripper2 {
+  margin-left: 2.5rem;
+}
+
+.textone {
+  color: #d90429;
+}
+
+.textsec {
+  color: white;
+}
+
+.stripText {
+  display: flex;
+  font-size: 2rem;
+  font-weight: 600;
+  transform: translateX(5%);
+  animation: my-animation 20s linear infinite;
+  font-family: "Roboto", sans-serif;
+}
+
+.stripText:hover {
+  animation-play-state: paused;
+}
+
+@keyframes my-animation {
+  from {
+    transform: translateX(5%);
+  }
+  to {
+    transform: translateX(-100%);
+  }
+}
+
+.content {
+  display: flex;
+  width: 100%;
+  padding: 5%;
+}
+
+.textContent {
+  padding: 5%;
+  width: 50%;
+  color: white;
+  display: block;
+  font-family: "Roboto", sans-serif;
+}
+
+.textContent .heading {
+  width: 100%;
+  font-size: 2rem;
+  font-weight: bold;
+  text-align: justify;
+}
+
+.textContent .para {
+  padding: 2%;
+  width: 100%;
+  font-size: 1.1rem;
+  text-align: justify;
+}
+
+.textContent .para strong {
+  color: #d90429;
+}
+
+.content .imageContent {
+  width: 50%;
+  display: block;
+  align-items: center;
+  justify-content: center;
+  padding: 5%;
+}
+
+.content .imageContent img {
+  border-radius: 37px;
+}
+
+@media (max-width: 800px) {
+  .container {
+    padding-top: 10%;
+  }
+  .content {
+    flex-direction: column;
+  }
+  .textContent {
+    width: 100%;
+    padding: 5%;
+  }
+
+  .textContent .heading {
+    width: 100%;
+    margin-left: 0;
+    font-size: 2rem;
+    font-weight: bold;
+    text-align: justify;
+  }
+
+  .textContent .para {
+    width: 100%;
+    margin-left: 0;
+    font-size: 1rem;
+    text-align: justify;
+  }
+
+  .content .imageContent {
+    width: 100%;
+    display: block;
+    align-items: center;
+    justify-content: center;
+    padding: 5%;
+  }
+
+  .content .imageContent img {
+    border-radius: 37px;
+  }
+}

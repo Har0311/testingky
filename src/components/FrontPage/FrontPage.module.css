@@ -1,0 +1,212 @@
+@import url("https://fonts.googleapis.com/css2?family=Lato:wght@100;300;400;700&family=Roboto:wght@300;400;500&display=swap");
+
+body {
+  overflow: auto;
+}
+
+video{
+  /* position: relative; */
+  justify-self: center;
+  object-fit: cover;
+  height: 100vh;
+  width: 100%;
+  /* background-position: 0; */
+  /* overflow: hidden; */
+  /* z-index: -1;
+  backdrop-filter: blur(5px); */
+  /* -o-filter: blur(4px); */
+  filter: blur(4px);
+}
+
+.kashiyatra{
+  /* top: 0; */
+  height: 300px;
+  width: 700px;
+  position: absolute;
+  top: 40%;
+  /* background-image: url('./kashiyatra.svg');
+  background-size: cover; */
+  backdrop-filter: blur(2px);
+  /* transition: all 5s ease 1s; */
+  /* margin: auto; */
+  /* z-index: 20; */
+}
+
+.container {
+  width: 100%;
+  font-family: "Roboto", sans-serif;
+  overflow: hidden;
+  max-width: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+.videoContainer {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+.videoContainer .VideoTag {
+  backdrop-filter: blur(10px);
+  width: 100%;
+}
+
+.VideoTagmob {
+  display: none;
+}
+
+.mouseonvideo {
+  z-index: 3;
+  width: 100%;
+  display: block;
+  align-items: center;
+  justify-content: center;
+  margin-top: -13rem;
+  position: absolute;
+}
+
+.mouseonvideo:hover {
+  cursor: pointer;
+}
+
+.caContainer {
+  display: flex;
+  z-index: 30;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  /* width: 100%; */
+  max-width: 100%;
+  /* background: #0b090a; */
+  height: 30rem;
+  font-family: "Roboto", sans-serif;
+  height: 300px;
+  width: 1000px;
+  position: absolute;
+  top: 40%;
+  /* background-image: url('./kashiyatra.svg');
+  background-size: cover; */
+  backdrop-filter: blur(2px);
+}
+
+.caContainer .headingText {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+.caContainer .headingText h1 {
+  padding-top: 8%;
+  font-size: 4rem;
+  font-weight: 700;
+  color: white;
+}
+
+.caContainer .caLines {
+  width: 80%;
+  display: block;
+  text-align: center;
+}
+
+.caContainer .caLines p {
+  padding-top: 2%;
+  color: white;
+  font-size: 1.5rem;
+  line-height: 2rem;
+}
+
+.caContainer .applyBtn {
+  display: block;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  padding-top: 2%;
+  padding-bottom: 5%;
+}
+
+.caContainer .applyBtn button {
+  border: 2px solid white;
+  padding: 0.5rem;
+  width: 200px;
+  text-align: center;
+  border-radius: 30px;
+  color: white;
+  font-size: 1rem;
+  line-height: 1.5rem;
+}
+
+.caContainer .applyBtn button:hover {
+  border: 2px solid #d90429;
+  background: #d90429;
+}
+
+@media (max-width: 640px) {
+  .caContainer {
+    height: 40rem;
+    top: 10%;
+  }
+  .videoContainer {
+    width: 100%;
+    display: flex;
+    height: 50rem;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+  }
+
+  .caContainer .headingText {
+    height: 50rem;
+    width: 90%;
+  }
+
+  .caContainer .headingText h1 {
+    padding-top: 10%;
+    font-size: 3rem;
+    font-weight: 700;
+    color: white;
+  }
+
+  .caContainer .caLines {
+    width: 90%;
+  }
+
+  .caContainer .caLines p {
+    padding-top: 1%;
+  }
+
+  .caContainer .applyBtn {
+    padding-top: 8%;
+  }
+}
+
+@media (max-width: 600px) {
+  .container {
+    padding-top: 15%;
+  }
+  .VideoTag {
+    display: none;
+  }
+  .VideoTagmob {
+    height: 50rem;  
+    display: initial;
+  }
+
+  .mouseonvideo {
+    z-index: 3;
+    width: 100%;
+    display: block;
+    align-items: center;
+    justify-content: center;
+    margin-top: -7rem;
+    position: absolute;
+  }
+
+  .mouseonvideo img {
+    width: 50px;
+  }
+}
